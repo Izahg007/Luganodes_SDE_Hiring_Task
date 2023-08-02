@@ -35,7 +35,7 @@ function App() {
   const handleSearch = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:3001/fetch_coin_info?coinName=${coinName}&vsCurrency=${vsCurrency}`
+        `https://crypto-tracker-backend-q6h1.onrender.com/fetch_coin_info?coinName=${coinName}&vsCurrency=${vsCurrency}`
       );
       axios
         .get(
@@ -74,7 +74,7 @@ function App() {
       setCurrCoin(response.data.currentCoin || '');
     } catch (error) {
       console.error('Error fetching cryptocurrency information:', error.message);
-      setPrice('Error fetching cryptocurrency information');
+      setPrice('429 Too Many Requests, API Denied Request');
       setTicker('');
       setIcon('');
     }
