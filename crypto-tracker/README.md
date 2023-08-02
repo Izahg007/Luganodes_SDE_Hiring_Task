@@ -9,7 +9,7 @@ the live website is hosted on https://cryptotracker-jimq.onrender.com/
 and the backend is hosted on https://crypto-tracker-backend-q6h1.onrender.com
 give it some time as free web services scale down when not in use.
 
-although it would not work because the backend hosted on render does not work due to the restrictions of Coin Gecko API as it only allows 30 requests per minutes from an IP and we possibly use a shared IP on the public server.
+give it a try eventhough it may not work because the backend hosted on render does not work due to the restrictions of Coin Gecko API as it only allows 30 requests per minutes from an IP and we possibly use a shared IP on the public server.
 
 ## Deployment
 
