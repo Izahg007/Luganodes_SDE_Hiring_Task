@@ -3,7 +3,13 @@
 
 The project is made using ReactJs for frontend, Express and NodeJs run the backend, for APIs we have used CoinGecko and firebase. We have used firebase real time database as our backedn NoSQL database.
 
+## Live Website
 
+the live website is hosted on https://cryptotracker-jimq.onrender.com/
+and the backend is hosted on https://crypto-tracker-backend-q6h1.onrender.com
+give it some time as free web services scale down when not in use.
+
+although it would not work because the backend hosted on render does not work due to the restrictions of Coin Gecko API as it only allows 30 requests per minutes from an IP and we possibly use a shared IP on the public server.
 
 ## Deployment
 

@@ -74,7 +74,7 @@ function App() {
       setCurrCoin(response.data.currentCoin || '');
     } catch (error) {
       console.error('Error fetching cryptocurrency information:', error.message);
-      setPrice('429 Too Many Requests, API Denied Request');
+      setPrice('');
       setTicker('');
       setIcon('');
     }
