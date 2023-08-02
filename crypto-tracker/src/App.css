@@ -1,5 +1,11 @@
-/* src/App.css */
 /* App.css */
+body{
+  margin-top: 20%;
+  margin-bottom:20%;
+}
+.critical-coins{
+  margin-bottom: 2rem;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -7,23 +13,37 @@
   justify-content: center;
   height: 100vh;
   font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.chart-container{
+  width: 50%;
+  height: auto;
+  margin-bottom: 2rem;
 }
 
 .title {
   font-size: 24px;
-  margin-bottom: 20px;
 }
 
 .centered {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  width:40rem;
+  margin-bottom: 1.5rem;
 }
 
 input {
   padding: 8px;
   margin-right: 10px;
   font-size: 16px;
+  width:20rem;
+}
+select{
+  width:10rem;
+}
+.watchlist-inputs input{
+  width:20%;
 }
 
 button {
@@ -33,29 +53,79 @@ button {
   color: #fff;
   border: none;
   cursor: pointer;
+
+  transition: background-color 0.5s ease;
+}
+
+button:active {
+  background-image: linear-gradient(to bottom, #007bff, #ef1570);
+}
+
+.coin-info {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .price {
   font-size: 18px;
-  margin-top: 20px;
+  margin-bottom: 5px;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin: 20px;
+.coin-icon {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
 }
 
-input {
-  padding: 5px;
-  margin-right: 10px;
+.error-message {
+  font-size: 16px;
+  color: red;
+  margin-top: 10px;
 }
 
-button {
-  padding: 5px 10px;
-  cursor: pointer;
+.watchlist-table {
+  width:80%;
 }
 
-p {
-  font-weight: bold;
+.watchlist-table h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #e2e2e2;
+}
+
+@media (max-width: 768px) {
+  .centered {
+    flex-direction: column;
+    width:auto;
+  }
+  input,
+  select,
+  button {
+    margin: 5px 0;
+  }
+}
+
